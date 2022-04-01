@@ -1,0 +1,124 @@
+1. npm init //initialise le projet
+2. npm install express //crée le node_module et install express
+
+3. A quoi sert le node_module :
+    Le dossier node_modules contient toutes les 
+    dépendances installées pour votre projet. 
+4. A quoi sert le .env ?
+    Le module process core de Node.js fournit la propriété env 
+    qui héberge toutes les variables d’environnement 
+    qui ont été définies au moment où le processus a été lancé.
+
+5. A quoi le package-lock ?
+    Yarn et npm fournissent un fichier de verrouillage autogénéré 
+    qui contient les entrées des versions exactes des dépendances 
+    utilisées dans le projet. 
+
+6. A quoi sert le package.json ?
+    Le paquet.json est utilisé pour plus de dépendances 
+    comme la définition des propriétés du projet, la description, 
+    les informations d’auteur et de licence, les scripts, etc.
+
+7. Créer un .gitignore
+
+8. Crée le dossier src 
+    Le dossier src contiendra tout votre code source
+
+9. Config
+    Contient les fichiers de configuration, basiquement en débutant 
+    votre connexion à votre bdd. On retrouvera ce fichier également
+    dans la structure avancé.
+10.Helpers
+    Toutes vos fonctions qui ne fit pas sur une seule route, qui 
+    peuvent être utile de façon transversale dans votre projet.
+11.Models
+    Si votre base de donnée à besoin de schema pour fonctionner, de 
+    structure de tables, vous allez avoir besoin de modèle.
+12.Routes
+    Contient tous les endpoints, un fichier par catégorie. Par exemple,
+    User.js (CRUD on USER)
+13. fichier : touch name_file.js
+
+Rappel : Ce n'est pas forcément votre priorité en tant que débutant,
+si vous comprenez les aspects plus essentiels de la programmation
+la structure de votre projet n'est pas forcément le point le plus
+important.
+
+
+//INTERMEDIATE////
+
+14. Controllers
+    Si vous implémenter un modèle MVC, vous pouvez valider les données
+    dans le controller.
+    Le contrôleur est responsable du contrôle de la logique de
+    l’application et agit en tant que coordinateur entre la vue 
+    et le modèle. Le contrôleur reçoit une entrée des utilisateurs 
+    via la vue, puis traite les données de l’utilisateur à l’aide 
+    du modèle et renvoie les résultats à la vue.
+15. Validation
+    Pour faire des validations plus poussées (avec yup par exemple)
+    vous devez définir des fonctions dans le dossier validations
+16. Middleware
+    
+17. Services
+    C'est ici que vous gérer la logique de votre app, apres les controlleurs
+    vous traitez vos données ici, calculer le salaire, etc
+
+Route -> Controllers -> Services
+
+//ADVANCED//
+
+Je recommande d'abandonner le JS pour du TS. Si vous développer 
+pour une plateforme qui se veut ambitieuse
+
+17. npm i typescript
+
+18. Compilateur typescript tsc --init 
+
+18bis. Si vous avez des problèmes avec ts, vous 
+l'installer en global a l'aide de npm i typescript -g
+pour tester si ca fonctionne : tsc --v
+
+19. npm install eslint pour codifier notre projet pour
+
+20. npm init @eslint/config
+
+21. dossiers tests
+    vous devez écrire des tests. En back, vous devez écrire des tests pour
+    vérifier si votre API fonctionne correctement. 
+        Validation testing
+        Functional Testing
+        UI Testing
+        Load Testing
+        Runtime/Error Detection
+        Security Testing
+        Penetration Testing
+        Fuzz Testing
+        Interoperability and WS Compliance Testing
+
+22. swagger : 
+    Lorsque vous développer de façon pro, vous devez écrire de la
+    documentation
+
+23. Constant : 
+    explicite
+
+24. Logger : 
+    Améliore votre console loggin
+
+25. Interfaces : 
+    Lorsque vous développer en TS, vous devez définir vos objets
+    vos structures
+26. Types : 
+    Pareillement vous devez définir vos types
+27. Tests file for each of Controllers
+28. Tests file for each of Services
+
+
+Bonus : une solution pour faciliter l'export c'est de créer des index.ts
+
+
+
+
+
+
